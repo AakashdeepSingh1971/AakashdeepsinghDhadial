@@ -234,11 +234,11 @@ h6 {
 }
 
 .right-column {
-    grid-area    : right-column;
-    display      : grid;
-    align-content: center;
-    padding-top: 50px;
-    padding-bottom:50px ;
+    grid-area     : right-column;
+    display       : grid;
+    align-content : center;
+    padding-top   : 50px;
+    padding-bottom: 50px;
 }
 
 #preview-shadow {
@@ -304,7 +304,8 @@ h6 {
             'right-column'
         ;
     }
-    .right-column{
+
+    .right-column {
         justify-content: center;
     }
 }
