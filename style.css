@@ -43,7 +43,9 @@ textarea {
     color      : var(--secondaryText);
     font-family: 'Roboto Mono', monospace;
 }
-
+body{
+    transition: 0.3s;
+}
 a {
     text-decoration: none;
     color          : #17a2b8;
@@ -126,7 +128,9 @@ h6 {
     background-color: var(--mainColor);
     border-radius   : 5px 5px 0 0;
 }
-
+#navigation a{
+    color: var(--mainText);
+}
 #navigation {
     margin : 0;
     padding: 10px;

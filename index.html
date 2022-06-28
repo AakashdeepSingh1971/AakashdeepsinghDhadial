@@ -10,8 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link id="theme-style" rel="stylesheet" href="blue.css">
+    <link rel="stylesheet"  type="text/css"  href="style.css">
+    <link id="theme-style" type="text/css" rel="stylesheet" href="">
+    <!-- <link id="theme-style" rel="stylesheet" href="green.css"> -->
+    <!-- <link id="theme-style" rel="stylesheet" href="purple.css"> -->
+
 </head>
 
 <body>
@@ -28,7 +31,7 @@
                         <div id="dot-3" class="browser-dot"></div>
                     </div>
                     <ul id="navigation">
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="left-column">
@@ -36,10 +39,10 @@
                     <h5 class="theme">Personalize Theme
                     </h5>
                     <div id="theme-option-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
                     <p id="settings-note">*Theme settings will be saved for<br>
                         your next vist </p>
@@ -94,8 +97,7 @@
                     </div>
                 </div>
                 <div class="social-links">
-                    <img id="social_img" src="http://drive.google.com/uc?export=view&id=1-6DoTxAgl4lT8bCzoji-moqpW8yLy2VY" alt="">https://drive.google.com/file/d/1-6DoTxAgl4lT8bCzoji-moqpW8yLy2VY/view?usp=sharing
-                    <h3>Find me on Twitter & Lnkedin</h3>
+                    <img id="social_img" src="http://drive.google.com/uc?export=view&id=1-6DoTxAgl4lT8bCzoji-moqpW8yLy2VY" alt="">
                     <a target="_blank" href="#">SOMETHING SOMETHING SOMETHING</a><br>
                     <a target="_blank" href="#">SOMETHING SOMETHING SOMETHING</a>
 
@@ -144,6 +146,7 @@
         <div class="main-container">
             <h3 class="potfolio"> Get In Touch </h3>
             <form action="" id="contact-form">
+                <a name="contact"></a>
                 <label> Name</label>
                 <input class="input-field" type="text" name="Name">
                 <label> Subject</label>
