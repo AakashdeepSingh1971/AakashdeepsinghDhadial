@@ -36,3 +36,5 @@ function setTheme(mode) {
 
     localStorage.setItem('theme', mode)
 }
+
+document.getElementById("videos").disabled=true;

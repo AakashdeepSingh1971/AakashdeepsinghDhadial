@@ -347,7 +347,10 @@ h6 {
     display   : block;
     object-fit: cover;
 }
+#videos:hover{
+    pointer-events: none;
 
+}
 .post-preview {
     background-color: #fff;
     padding         : 15px;
