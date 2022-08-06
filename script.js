@@ -38,3 +38,5 @@ function setTheme(mode) {
 }
 
 document.getElementById("videos").disabled=true;
+
+
