@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet"  type="text/css"  href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link id="theme-style" type="text/css" rel="stylesheet" href="">
     <!-- <link id="theme-style" rel="stylesheet" href="green.css"> -->
     <!-- <link id="theme-style" rel="stylesheet" href="purple.css"> -->
@@ -35,7 +35,10 @@
                     </ul>
                 </div>
                 <div class="left-column">
-                    <img id="profile-pic" style="border-radius: 100%;"src="http://drive.google.com/uc?export=view&id=1-6DoTxAgl4lT8bCzoji-moqpW8yLy2VY">
+                    <img id="profile-pic" style="border-radius: 100%;">
+                    <!-- <img id="profile-pic" style="border-radius: 100%;"
+                      src="http://drive.google.com/uc?export=view&id=1-6DoTxAgl4lT8bCzoji-moqpW8yLy2VY" >
+                         -->
                     <h5 class="theme">Personalize Theme
                     </h5>
                     <div id="theme-option-wrapper">
@@ -76,7 +79,8 @@
 
                     <h4>TOP EXPERTISE</h4>
 
-                    <p>Fullstack developer with primary focus on react and tailwind:<a href="https://drive.google.com/file/d/1J6YbnAVYumRPPrVQggvMSP8qwLIYNcqg/view?usp=sharing"
+                    <p>Fullstack developer with primary focus on react and tailwind:<a
+                            href="https://drive.google.com/file/d/1J6YbnAVYumRPPrVQggvMSP8qwLIYNcqg/view?usp=sharing"
                             target="_blank"> download resume </a></p>
                     <div id="skills">
                         <ul>
@@ -92,63 +96,70 @@
                     </div>
                 </div>
                 <div>
-                <div class="slideshow-container">
+                    <div class="slideshow-container">
 
-                    <div class="mySlides fade">
-                      <img id="image" src="./images/desktop wallpaper.jpg" style="width:100%">
-                    </div>
-                    
-                    <div   class="mySlides fade">
-                      <img id="image" src="./images/desktop wallpaper.jpg" style="width:100%">
-                    </div>
-                    
-                    <div   class="mySlides fade">
-                      <img id="image" src="./images/desktop wallpaper.jpg" style="width:100%">
-                    </div>
-                    
-                    <a class="prev" onclick="plusSlides(-1)">❮</a>
-                    <a class="next" onclick="plusSlides(1)">❯</a>
-                    
+                        <div class="mySlides fade">
+                            <a class="subtitle" href="https://high238.github.io/designcomponents/nine-dots-menu/index.html"
+                                target="_blank">Read More</a>
+                            <img id="image" src="./images/desktop wallpaper.jpg" style="width:100%">
+                           
+                        </div>
+
+                        <div class="mySlides fade">
+                            <a class="subtitle" href="https://high238.github.io/designcomponents/nine-dots-menu/index.html"
+                                target="_blank">Read More</a>
+                            <img id="image" src="./images/desktop wallpaper.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <a class="subtitle" href="https://high238.github.io/designcomponents/nine-dots-menu/index.html"
+                                target="_blank">Read More</a>
+                            <img id="image" src="./images/desktop wallpaper.jpg" style="width:100%">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+
                     </div>
                     <br>
-                    
+
                     <div style="text-align:center">
-                      <span class="dot" onclick="currentSlide(1)"></span> 
-                      <span class="dot" onclick="currentSlide(2)"></span> 
-                      <span class="dot" onclick="currentSlide(3)"></span> 
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
                     </div>
+                    
                 </div>
                 <script>
-                let slideIndex = 1;
+                    let slideIndex = 1;
                     showSlides(slideIndex);
-                    
-                    function plusSlides(n) {
-                      showSlides(slideIndex += n);
-                    }
-                    
-                    function currentSlide(n) {
-                      showSlides(slideIndex = n);
-                    }
-                    
-                    function showSlides(n) {
-                      let i;
-                      let slides = document.getElementsByClassName("mySlides");
-                      let dots = document.getElementsByClassName("dot");
-                      if (n > slides.length) {slideIndex = 1}    
-                      if (n < 1) {slideIndex = slides.length}
-                      for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none";  
-                      }
-                      for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" active", "");
-                      }
-                      slides[slideIndex-1].style.display = "block";  
-                      dots[slideIndex-1].className += " active";
-                    }</script>
-                
 
-                </div>
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        let i;
+                        let slides = document.getElementsByClassName("mySlides");
+                        let dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) { slideIndex = 1 }
+                        if (n < 1) { slideIndex = slides.length }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                    }</script>
+
             </div>
+        </div>
         </div>
     </section>
     <section class="s1">
@@ -157,31 +168,37 @@
             <div class="post-wrapper">
                 <div>
                     <div class="post">
-                        <img class="thumbnail" src="https://cdn.discordapp.com/attachments/820023642121175078/995980582519586836/ninedot.gif">
+                        <img class="thumbnail"
+                            src="https://cdn.discordapp.com/attachments/820023642121175078/995980582519586836/ninedot.gif">
                         <div class="post-preview">
                             <h6 class="post-title">Post Title</h6>
                             <p class="post-intro">This is a sentence </p>
-                            <a href="https://high238.github.io/designcomponents/nine-dots-menu/index.html" target="_blank">Read More</a>
+                            <a href="https://high238.github.io/designcomponents/nine-dots-menu/index.html"
+                                target="_blank">Read More</a>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="post">
-                        <img class="thumbnail" src="https://cdn.discordapp.com/attachments/820023642121175078/995980583425540096/seachbar.gif">
+                        <img class="thumbnail"
+                            src="https://cdn.discordapp.com/attachments/820023642121175078/995980583425540096/seachbar.gif">
                         <div class="post-preview">
                             <h6 class="post-title">Post Title</h6>
                             <p class="post-intro">This is a sentence </p>
-                            <a href="https://high238.github.io/designcomponents/search-box/index.html" target="_blank">Read More</a>
+                            <a href="https://high238.github.io/designcomponents/search-box/index.html"
+                                target="_blank">Read More</a>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="post">
-                        <img class="thumbnail" src="https://cdn.discordapp.com/attachments/820023642121175078/995983955914395750/unknown.png">
+                        <img class="thumbnail"
+                            src="https://cdn.discordapp.com/attachments/820023642121175078/995983955914395750/unknown.png">
                         <div class="post-preview">
                             <h6 class="post-title">Post Title</h6>
                             <p class="post-intro">This is a sentence </p>
-                            <a href="https://high238.github.io/designcomponents/Ribbon/index.html" target="_blank">Read More</a>
+                            <a href="https://high238.github.io/designcomponents/Ribbon/index.html" target="_blank">Read
+                                More</a>
                         </div>
                     </div>
                 </div>
