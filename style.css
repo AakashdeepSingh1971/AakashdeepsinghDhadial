@@ -493,7 +493,15 @@ h6 {
     animation-name    : fade;
     animation-duration: 2s;
 }
-
+.map{
+    background-color: rgb(166, 159, 159);
+}
+.main3-container {
+    width : 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+}
 @keyframes fade {
     from {
         opacity: .4
