@@ -53,9 +53,7 @@ a {
     color          : #17a2b8;
 }
 
-ul {
-    list-style: none;
-}
+
 
 h1 {
     font-size: 56px;
@@ -136,6 +134,7 @@ h6 {
 }
 
 #navigation {
+    list-style: none;
     margin : 0;
     padding: 10px;
 }
@@ -145,7 +144,9 @@ h6 {
     margin-left : 5px;
     margin-right: 5px;
 }
-
+#navigation ul{
+   
+}
 .dots-wrapper {
     display: flex;
     padding: 10px;
@@ -302,12 +303,11 @@ h6 {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     padding-top          : 50px;
     padding-bottom       : 50px;
-    gap                  : 100px;
+    gap                  : 30px;
 }
 
 #skills {
     display         : flex;
-    gap             : 110px;
     background-color: var(--previewShadow);
 }
 
