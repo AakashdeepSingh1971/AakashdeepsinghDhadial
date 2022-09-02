@@ -430,11 +430,11 @@ h6 {
 
 .subtitle {
 
-    color     : #f2f2f2;
-    font-size : 15px;
-    padding   : 8px 12px;
+    color     : #5e5e5e;
+    font-size : 50px;
+    padding   : 12px 12px;
     position  : absolute;
-    bottom    : 8px;
+    bottom    : 10px;
     width: 100%;
     text-align: center;
 }

@@ -1,2 +1,0 @@
-# AakashdeepsinghDhadial
-Personal website 
