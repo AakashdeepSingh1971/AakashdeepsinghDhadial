@@ -135,8 +135,8 @@ h6 {
 
 #navigation {
     list-style: none;
-    margin : 0;
-    padding: 10px;
+    margin    : 0;
+    padding   : 10px;
 }
 
 #navigation {
@@ -433,7 +433,7 @@ h6 {
     padding   : 12px 12px;
     position  : absolute;
     bottom    : 10px;
-    width: 100%;
+    width     : 100%;
     text-align: center;
 }
 
@@ -491,16 +491,55 @@ h6 {
     animation-name    : fade;
     animation-duration: 2s;
 }
-.map{
+
+.map {
     background-color: rgb(166, 159, 159);
 }
+
 .main3-container {
     margin-left: 10%;
-    overflow: hidden;
-    width : 90%;
-    margin: 0 auto;
-    display: flex;
+    overflow   : hidden;
+    width      : 90%;
+    margin     : 0 auto;
+    display    : flex;
 }
+
+
+.footer {
+    text-align: center;
+    color     : #f3c892;
+}
+
+.footer ul {
+    size: 200px;
+}
+
+.footer-name {
+    font-size: 40px;
+}
+
+#social-media a {
+    width     : 2px;
+    padding   : 10px;
+    font-size : 3rem;
+    color     : #777;
+    transition: 0.3s;
+}
+
+#social-media a:hover {
+    color: #f3c892;
+}
+
+.so-media {
+    list-style     : none;
+    margin-top     : 10px;
+    display        : flex;
+    justify-content: center;
+}
+
+
+
+
 @keyframes fade {
     from {
         opacity: .4

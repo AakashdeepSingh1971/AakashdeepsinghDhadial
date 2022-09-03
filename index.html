@@ -16,6 +16,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
+    
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <!-- <link id="theme-style" rel="stylesheet" href="green.css"> 
     <link id="theme-style" rel="stylesheet" href="purple.css">  -->
 
@@ -238,24 +240,57 @@
             <!-- <iframe title="map" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%C4%B0zmir+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" style="filter: grayscale(1) contrast(1.2) opacity(0.16);"></iframe> -->
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109066.25059530177!2d75.50337894573488!3d31.322525386349657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5a5747a9eb91%3A0xc74b34c05aa5b4b8!2sJalandhar%2C%20Punjab%2C%20India!5e0!3m2!1sen!2sus!4v1660011935405!5m2!1sen!2sus"
-                width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                width="55%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
                 style="filter: grayscale(1) contrast(1.2) opacity(0.16);"></iframe>
-            <!-- <form action="mailto:https://mail.google.com/mail/?view=cm&fs=1&to=email@gmail.com" id="contact-form">
-                <a name="contact"></a>`
+            <form action=" " id="contact-form">
+                <a name="contact"></a>
                 <label> Name</label>
-                <input class="input-field" type="text" name="Name">
+                <input class="input-field name" type="text">
                 <label> Subject</label>
-                <input class="input-field" type="text" name="Subject">
+                <input class="input-field" type="text" >
                 <label> Email</label>
-                <input class="input-field" type="text" name="Email">
+                <input class="input-field email" type="text" >
                 <label> Message</label>
-                <textarea class="input-field" name="Message"></textarea>
-                <input id="submit-btn" type="submit" value="send">
-            </form> -->
+                <textarea class="input-field message" ></textarea>
+                <input id="submit-btn"  type="submit" value="send" class="send-btn">
+            </form>
         </div>
-    </section>
+        
 
+  <section class="footer">
+    <div  id="social-media">
+      <ul class="so-media">
+        <li>
+          <a href="https://www.instagram.com/_aakashdeep_2000/" target="_blank"><i class='bx bxl-instagram'></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/aakash-deep-67b0b8193/" target="_blank"><i
+              class='bx bxl-linkedin'></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/HIGH238/" target="_blank"><i class='bx bxl-github'></i></a>
+        </li>
+        <li>
+          <a href="mailto:aakashdeep01971@gmail.com" target="_blank"><i class='bx bxs-envelope'></i></a>
+        </li>
+
+      </ul>
+    </div>
+    </div>
+
+  </section>
+
+</section>
+</script>
+<!--sweet alert-->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script >
+   (function(){
+      emailjs.init("nclITGwG3j5I0CE0w");
+   })();
+</script>
 
     <script src="./src/script.js" async defer></script>
 </body>
