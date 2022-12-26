@@ -1,0 +1,143 @@
+* {
+    margin: 0px;
+}
+
+
+
+.main-container {
+    width : 1200px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    border-bottom   : 1px solid #c1c1c1;
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    background-color: #eaeaea;
+    border-radius   : 5px 5px 0 0;
+}
+.heading{
+    font-size: 56px;
+    font-family: 'Russo One', sans-serif;
+    font-weight: 500;
+}
+a {
+    text-decoration: none;
+    color          : #17a2b8;
+}
+
+ul {
+    list-style: none;
+}
+
+#nav a {
+    color: black;
+}
+
+#nav {
+    margin : 0;
+    padding: 10px;
+}
+
+#nav {
+    display     : inline-block;
+    margin-left : 5px;
+    margin-right: 5px;
+}
+
+.dots-wrapper {
+    display: flex;
+    padding: 10px;
+}
+
+#dot-1 {
+    background-color: #FC6058;
+}
+
+#dot-2 {
+    background-color: #FEC02F;
+}
+
+#dot-3 {
+    background-color: #2ACA3E;
+}
+
+.browser-dot {
+    background-color: black;
+    height          : 15px;
+    width           : 15px;
+    border-radius   : 50%;
+    margin          : 5px;
+
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow   : -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow        : -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+}
+
+.left-column {
+    grid-area     : left-column;
+    padding-top   : 50px;
+    padding-bottom: 50px;
+
+}
+
+
+img {
+    width : 600px;
+    height: 400;
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width : 100%;
+    height: auto;
+}
+
+div.desc {
+    padding   : 15px;
+    text-align: center;
+}
+
+
+.responsive {
+    margin-bottom: 2%;
+    padding: 0 6px;
+    float  : left;
+    width  : 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width : 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear  : both;
+}
+
+
+@media screen and (max-width:1200px) {
+    .main-container {
+        width: 95%;
+
+    }
+
+}
