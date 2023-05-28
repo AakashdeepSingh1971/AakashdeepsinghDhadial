@@ -119,6 +119,10 @@ div.desc {
         width : 49.99999%;
         margin: 6px 0;
     }
+    iframe{
+        width: 100%;
+        height: 700px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
