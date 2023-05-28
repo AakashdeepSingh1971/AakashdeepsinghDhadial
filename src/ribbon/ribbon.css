@@ -1,0 +1,166 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+
+}
+
+
+
+.wrapper {
+    border-bottom   : 1px solid #c1c1c1;
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    background-color: #eaeaea;
+    border-radius   : 5px 5px 0 0;
+}
+
+a {
+    text-decoration: none;
+    color          : #17a2b8;
+}
+
+ul {
+    list-style: none;
+}
+
+#nav a {
+    color: black;
+}
+
+#nav {
+    margin : 0;
+    padding: 10px;
+}
+
+#nav {
+    display     : inline-block;
+    margin-left : 5px;
+    margin-right: 5px;
+}
+
+.dots-wrapper {
+    display: flex;
+    padding: 10px;
+}
+
+#dot-1 {
+    background-color: #FC6058;
+}
+
+#dot-2 {
+    background-color: #FEC02F;
+}
+
+#dot-3 {
+    background-color: #2ACA3E;
+}
+
+.browser-dot {
+    background-color: black;
+    height          : 15px;
+    width           : 15px;
+    border-radius   : 50%;
+    margin          : 5px;
+
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow   : -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow        : -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+}
+
+.left-column {
+    grid-area     : left-column;
+    padding-top   : 50px;
+    padding-bottom: 50px;
+
+}
+
+.main-container {
+    width           : 100%;
+    margin          : 0 auto;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    min-height      : 100vh;
+    background-color: #CEFFF1;
+}
+
+.card {
+    position     : relative;
+    width        : 300px;
+    height       : 400px;
+    background   : #ACE7EF;
+    border-radius: 20px;
+    box-shadow   : 2px 2px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.card span {
+    position       : absolute;
+    top            : -10px;
+    left           : -10px;
+    width          : 150px;
+    height         : 150px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    overflow       : hidden;
+}
+
+.card span::before {
+    content        : 'Best Vale';
+    position       : absolute;
+    width          : 200%;
+    height         : 40px;
+    display        : flex;
+    background     : #62baea;
+    transform      : rotate(-45deg) translatey(-20px);
+    justify-content: center;
+    align-items    : center;
+    text-transform : uppercase;
+    font-weight    : 400;
+    color          : #ffffff;
+    letter-spacing : 0.1em;
+    box-shadow     : 0 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.card span::after {
+    content        : '';
+    position       : absolute;
+    bottom         : 0;
+    left           : 0;
+    width          : 10px;
+    height         : 10px;
+    z-index        : -1;
+    background     : #4a98bf;
+    box-shadow     : 140px -140px #4a98bf;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    overflow       : hidden;
+}
+
+@media screen and (max-width:100%) {
+    .main-container {
+        width: 95%;
+
+    }
+}
+
+@media screen and (max-width:800px) {
+    .intro-wrapper {
+
+        grid-template-columns: 1fr;
+        grid-template-areas  :
+            'nav-wrapper '
+            'left-column'
+            'right-column'
+        ;
+    }
+
+    .right-column {
+        justify-content: center;
+    }
+}
